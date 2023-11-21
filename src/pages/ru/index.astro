@@ -1,14 +1,12 @@
 ---
 // Component Imports
 import Banner from '@components/Banner.astro';
-import Footer from '@components/Footer.astro';
-import SectionLinkGrid from '@components/SectionLinkGrid.astro';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<html lang="uk">
+<html lang="ru">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -27,9 +25,8 @@ import SectionLinkGrid from '@components/SectionLinkGrid.astro';
 	</head>
 	<body>
 		<main>
-			<SectionLinkGrid />
-			<Banner headingone = 'Hi there', headingtwo = 'From My Best Project', text = 'Get this template', link1 = 'Fast Download', link2 = 'Slow Download', href1 = "/download", href2 = "/download" />
-			<Footer headingone = 'Hi there', headingtwo = 'From My Best Project', headingthree='Company', headingfour='Documents', text = 'Get this template' />
+			<!-- Note: no `client:load` necessary since AlpineJS is always included -->
+			<Banner/>
 		</main>
 	</body>
 </html>
